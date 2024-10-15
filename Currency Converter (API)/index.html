@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./assests/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <p class="subtitle">Check live rates, set rate alerts, receive notifications and more.</p>
+
+        <div class="converter">
+            <div class="input-group">
+                <label for="amount-from">Amount</label>
+                <div class="input-wrapper">
+                    <select id="currency-from" class="currency-select">
+                        <option value="SGD">SGD</option>
+
+                    </select>
+                    <input type="text" id="amount-from" autocomplete="off" >
+                </div>
+            </div>
+
+            <button id="swap-button" aria-label="Swap currencies">
+                <img src="./assests/arrows.png" class="swap-icon">
+            </button>
+
+            <div class="input-group">
+                <label for="amount-to">Converted Amount</label>
+                <div class="input-wrapper">
+                    <select id="currency-to" class="currency-select">
+                        <option value="USD">USD</option>
+                    </select>
+                    <input type="text" id="amount-to" readonly>
+                </div>
+            </div>
+
+            <p class="exchange-rate">
+                Indicative Exchange Rate<br>
+                <span id="rate-display">1 SGD = 0.7367 USD</span>
+            </p>
+        </div>
+
+        <div class="keypad">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button></button>
+            <button>0</button>
+            <button class="backspace">⌫</button>
+        </div>
+    </div>
+    <script src="console.js"></script>
+</body>
+</html>

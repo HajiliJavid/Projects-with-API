@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="https://kit.fontawesome.com/bfb51626a7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="mode-switch">
+          <div id="switcher" >
+            <div class="passive" id="circle" ></div>
+          </div>
+          <span id="switcher-label">Light Mode</span>
+        </div>
+        <div class="search-bar">
+        <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input type="text" id="input" placeholder="Search for your preferred city..." />
+        </div>
+        <button id="current-location-btn" class="current-location">
+          <i class="fas fa-map-marker-alt"></i>
+          Current Location
+        </button>
+      </header>
+      <main>
+        <div class="card current-weather">
+            <div></div>
+          <h2 class="mainName">Athens</h2>
+          <div class="time">
+            <span class="current-time">09:03</span>
+            <span class="date">Thursday, 31 Aug</span>
+          </div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="card weather-details">
+          <div class="column-1">
+            <div class="temperature">
+              <span class="current-temp">24°C</span>
+              <span class="feels-like">Feels like: 22°C</span>
+            </div>
+            <div class="sun-times">
+              <div class="sunRise">
+                <img src="assets/darkSunRise.png" alt="">
+                <div>
+                    <span>Sunrise</span>
+                    <span>06:37 AM</span>
+                </div>
+              </div>
+              <div  class="sunSet">
+                <img src="assets/darkSunSet.png" alt="">
+                <div>
+                    <span>Sunset</span>
+                    <span>20:37 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="condition">
+            <div></div>
+            <i class="fa-solid fa-sun"></i>
+            <span>Sunny</span>
+          </div>
+          <div class="other-details">
+            <div class="detail">
+              <i class="fa-solid fa-water"></i>
+              <span>41%</span>
+              <span>Humidity</span>
+            </div>
+            <div class="detail">
+              <i class="fa-solid fa-wind"></i>
+              <span>2km/h</span>
+              <span>Wind Speed</span>
+            </div>
+            <div class="detail">
+              <i class="fa-solid fa-gauge"></i>
+              <span>997hPa</span>
+              <span>Pressure</span>
+            </div>
+            <div class="detail">
+              <i class="fa-solid fa-leaf"></i>
+              <span>8</span>
+              <span>UV</span>
+            </div>
+          </div>
+        </div>
+        <div class="card forecast">
+          <h3>5 Days Forecast:</h3>
+          <ul>
+            <li>
+              <img src="./assets/clouds.png" alt="">
+              <span>20°C</span>
+              <span>Friday, 1 Sep</span>
+            </li>
+            <li>
+              <img src="./assets/mist.png" alt="">
+              <span>22°C</span>
+              <span>Saturday, 2 Sep</span>
+            </li>
+            <li>
+              <img src="./assets/clear.png" alt="">
+              <span>27°C</span>
+              <span>Sunday, 3 Sep</span>
+            </li>
+            <li>
+              <img src="assets/rainy.png" alt="">
+              <span>18°C</span>
+              <span>Monday, 4 Sep</span>
+            </li>
+            <li>
+              <img src="assets/drizzle.png" alt="">
+              <span>16°C</span>
+              <span>Tuesday, 5 Sep</span>
+            </li>
+          </ul>
+        </div>
+        <div class="card hourly-forecast">
+          <h3>Hourly Forecast:</h3>
+          <div class="hourly-items">
+            <div class="hourly-item sunny">
+              <span>12:00</span>
+              <img src="assets/mist.png" alt="">
+              <span>26°C</span>
+              <img src="assets/navigation.png" alt="" class="navigation">
+              <span>3km/h</span>
+            </div>
+            <div class="hourly-item sunny">
+              <span>15:00</span>
+              <img src="assets/clear.png" alt="">
+              <span>27°C</span>
+              <img src="assets/navigation.png" alt="" class="navigation">
+              <span>2km/h</span>
+            </div>
+            <div class="hourly-item sunny">
+              <span>18:00</span>
+              <img src="assets/clouds.png" alt="">
+              <span>27°C</span>
+              <img src="assets/navigation.png" alt="" class="navigation">
+              <span>2km/h</span>
+            </div>
+            <div class="hourly-item nightTime">
+              <span>21:00</span>
+              <img src="assets/clouds.png" alt="">       
+              <span>26°C</span>
+              <img src="assets/navigation.png" alt="" class="navigation">
+              <span>3km/h</span>
+            </div>
+            <div class="hourly-item nightTime">
+              <span>00:00</span>
+              <img src="assets/rainy.png" alt="">
+              <span>22°C</span>
+              <img src="assets/navigation.png" alt="" class="navigation">
+              <span>3km/h</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="console.js"></script>
+  </body>
+</html>
